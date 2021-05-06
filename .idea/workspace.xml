@@ -10,7 +10,177 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c728682-f249-455c-8820-98fc3c48eb17" name="Default Changelist" comment="First commit" />
+    <list default="true" id="7c728682-f249-455c-8820-98fc3c48eb17" name="Default Changelist" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/portfolio2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/Project.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Certificates/deepLearning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Certificates/imagineCup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Certificates/tf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Content/Formspree.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Content/Hexagon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Content/Me.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Dividers/Round.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Dividers/Wavy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Education/insat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Experience/apps4you.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Experience/arsela.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Experience/orange.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Logo/Inner.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Logo/Logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Logo/Mono.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Logo/Outer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Logo/logo_aymen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Projects/alz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Projects/ar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Projects/award.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Projects/nst.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Projects/ocr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Projects/pfe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Projects/restau.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Projects/ubo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/angular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/aws.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/azure.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/bash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/cplusplus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/csharp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/css.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/docker.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/dotnet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/express.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/figma.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/firebase.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/gcp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/git.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/gulp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/heroku.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/html.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/java.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/javascript.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/jest.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/kubernetes.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/mongodb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/nestjs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/nodejs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/orange.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/postgresql.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/python.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/react.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/rlang.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/sass.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/spring.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/sql.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/tensorflow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/typescript.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/Skills/vue.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/hexagon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/icons/Favicon-260x260.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/icons/android-chrome-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/icons/android-chrome-256x256.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/icons/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/icons/browserconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/icons/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/icons/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/icons/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/icons/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/icons/mstile-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/icons/safari-pinned-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/images/icons/site.webmanifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Canvas/Canvas.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Bg.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Body.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Elevation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/General.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Hr.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Links.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/ProgressBar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Scrollbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Themes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/General/Tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Header/Logo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Menu/Hamburger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Menu/Navigation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Menu/Sections.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Menu/Title.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Menu/Variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Sections/About/About.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Sections/Cerificates/Certificates.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Sections/Connect/Connect.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Sections/Education/Education.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Sections/Experience/Experience.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Sections/Projects/Projects.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Sections/Skills/HexagonGrid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Sections/Skills/Skills.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Sections/_General/Section.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/Theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Canvas/Canvas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Canvas/Stars.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Classes/Component/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Classes/Elements/Certificates.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Classes/Elements/Education.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Classes/Elements/Experience.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Classes/Elements/Helpers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Classes/Elements/Menu.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Classes/Elements/Project.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Classes/Elements/Quality.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Classes/Elements/Section.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Classes/Elements/Skill.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Classes/Elements/SkillsFilter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Classes/Elements/Social.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Data/About.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Data/Certificates.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Data/Education.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Data/Experience.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Data/Projects.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Data/Qualities.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Data/Skills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Data/Social.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Definitions/JSX.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Definitions/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Events/About.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Events/Body.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Events/Certificates.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Events/Connect.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Events/CopyrightYear.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Events/Education.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Events/Experience.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Events/Logo.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Events/Main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Events/Menu.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Events/Projects.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Modules/DOM.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Modules/EventDispatcher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Modules/SVG.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Modules/WebPage.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Particles/Animation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Particles/AnimationFrameFunctions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Particles/Color.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Particles/Coordinate.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Particles/Mouse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Particles/Particle.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Particles/ParticleSettings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Particles/Particles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Particles/Stroke.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ts/Particles/Vector.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +257,8 @@
       <workItem from="1619539964782" duration="17000" />
       <workItem from="1619649638354" duration="3144000" />
       <workItem from="1619697175510" duration="878000" />
-      <workItem from="1619828195628" duration="951000" />
+      <workItem from="1619828195628" duration="1858000" />
+      <workItem from="1619847474184" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1617645096126</created>
@@ -187,7 +358,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619829930726</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="First commit">
+      <created>1619830091478</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1619830091478</updated>
+    </task>
+    <task id="LOCAL-00016" summary="First commit">
+      <created>1619830214849</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1619830214849</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,10 +423,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="407" y="174" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1617654374583" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1619829937625">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1619830217901">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1619829937625" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1619830217901" />
     <state x="478" y="11" width="579" height="801" key="find.popup" timestamp="1619650830681">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

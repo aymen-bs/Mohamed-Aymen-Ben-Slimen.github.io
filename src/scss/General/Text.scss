@@ -1,0 +1,144 @@
+// Styling for font sizes
+
+@import '../Theme.scss';
+
+@each $i, $sizes in $font-sizes {
+    .is-size-#{$i} {
+        @include font-size($i);
+    }
+}
+
+@each $name, $weight in $font-weights {
+    .is-#{$name}-weight {
+        font-weight: $weight;
+    }
+}
+
+.is-italic {
+    font-style: italic;
+}
+
+.is-uppercase {
+    text-transform: uppercase;
+}
+
+.is-sentence {
+    text-transform: none;
+}
+
+.is-justified {
+    text-align: justify;
+}
+
+.is-center-aligned {
+    text-align: center;
+}
+
+.is-left-aligned {
+    text-align: left;
+}
+
+.is-right-aligned {
+    text-align: right;
+}
+
+.is-quote {
+    padding-left: 1rem;
+    border-left: 0.25rem solid theme-background-color(primary);
+}
+
+.is-body {
+    line-height: 1.5;
+}
+
+.is-handwriting {
+    font-family: font-family(handwriting);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+// Typography implementation (for future use?)
+.text-display-4 {
+    @include font-size(1);
+    font-weight: font-weight(light);
+    letter-spacing: -0.01em;
+    line-height: 112px;
+}
+
+.text-display-3 {
+    @include font-size(2);
+    font-weight: font-weight(normal);
+    letter-spacing: -0.005em;
+    line-height: 58px;
+}
+
+.text-display-2 {
+    @include font-size(3);
+    font-weight: font-weight(normal);
+    letter-spacing: 0;
+    line-height: 48px;
+}
+
+.text-display-1 {
+    @include font-size(4);
+    font-weight: font-weight(normal);
+    letter-spacing: 0;
+    line-height: 40px;
+}
+
+.text-headline {
+    @include font-size(5);
+    font-weight: font-weight(normal);
+    letter-spacing: 0;
+    line-height: 32px;
+}
+
+.text-title {
+    @include font-size(6);
+    font-weight: font-weight(semi-bold);
+    letter-spacing: 0.005em;
+    line-height: 26px;
+}
+
+.text-subtitle {
+    @include font-size(7);
+    font-weight: font-weight(normal);
+    letter-spacing: 0.01em;
+    line-height: 24px;
+}
+
+.text-body-2 {
+    @include font-size(8);
+    font-weight: font-weight(semi-bold);
+    letter-spacing: 0.01em;
+    line-height: 24px;
+}
+
+.text-body-1 {
+    @include font-size(8);
+    font-weight: font-weight(normal);
+    letter-spacing: 0.01em;
+    line-height: 20px;
+}
+
+.text-caption {
+    @include font-size(9);
+    font-weight: font-weight(normal);
+    letter-spacing: 0.02em;
+    line-height: 17px;
+}
+
+.text-link {
+    @include font-size(8);
+    font-weight: font-weight(normal);
+}
+
+.text-button {
+    @include font-size(8);
+    font-weight: font-weight(normal);
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}

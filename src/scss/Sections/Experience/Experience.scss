@@ -1,0 +1,119 @@
+// Styling for the Experience section
+
+@import "../../Theme";
+
+$icon-sizes: (
+    xs: 3rem,
+    sm: 3.75rem,
+    md: 3rem
+);
+
+section#experience {
+    .card.experience {
+        @include drawn-in;
+
+        .content {
+            .header {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+
+                @include for-viewport-down(sm) {
+                    flex-wrap: wrap;
+
+                    >:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                .icon {
+                    flex: 0 0 auto;
+                    height: auto;
+                    margin-right: 1rem;
+                    min-width: map-get($icon-sizes, xs);
+
+                    @include for-viewport-down(sm) {
+                        margin-right: 0;
+                    }
+
+                    @each $breakpoint, $size in $icon-sizes {
+                        @include for-viewport-up($breakpoint) {
+                            width: $size;
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        -webkit-user-drag: none;
+                        user-select: none;
+                    }
+                }
+
+                .small {
+                    color: font-color(light);
+                    font-weight: font-weight(normal);
+                    font-style: italic;
+                    font-size: 0.75rem;
+
+                    @include for-mobile {
+                        font-size: 0.5rem;
+                    }
+                }
+
+                .company {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    text-align: left;
+                    width: 100%;
+
+                    @include for-viewport-down(sm) {
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    .name {
+                        color: font-color(dark);
+                        transition: color 0.2s;
+
+                        &:hover {
+                            color: font-color(link);
+                        }
+                    }
+                }
+
+                .role {
+                    justify-self: flex-end;
+                    text-align: right;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;
+                    width: 100%;
+
+                    @include for-viewport-down(sm) {
+                        align-items: center;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .info {
+                padding: 1rem 2rem;
+
+                .description {
+                    padding-left: 1rem;
+                    border-left: 0.25rem solid theme-background-color(primary);
+                }
+
+                .job {
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+}
