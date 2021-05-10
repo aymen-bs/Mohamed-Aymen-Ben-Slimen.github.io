@@ -3813,6 +3813,51 @@ h1, h2, h3, h4, h5, h6, p {
         transform: translateY(-50%);
         border-color: transparent #2D323F transparent transparent; }
 
+header.logo {
+  width: 100%;
+  padding: 0.5rem 2rem;
+  background-color: white;
+  user-select: none;
+  -webkit-user-select: none; }
+  header.logo .row {
+    max-width: 75rem;
+    margin: 0 auto; }
+    header.logo .row .image {
+      width: 4.675rem;
+      height: 4.675rem;
+      margin-right: 0.25rem;
+      position: relative; }
+      header.logo .row .image img {
+        height: inherit;
+        width: inherit;
+        position: absolute;
+        -webkit-user-drag: none;
+        transform-origin: center center;
+        -webkit-transform-origin: center center; }
+        header.logo .row .image img:not(.preload) {
+          transition: transform 1.5s;
+          -webkit-transition: 1.5s;
+          transform: scale(1, 1) rotate(0deg);
+          -webkit-transform: scale(1, 1) rotate(0deg); }
+        header.logo .row .image img.preload.outer {
+          transform: scale(0, 0) rotate(360deg);
+          -webkit-transform: scale(0, 0) rotate(360deg); }
+        header.logo .row .image img.preload.inner {
+          transform: scale(0, 0) rotate(-180deg);
+          -webkit-transform: scale(0, 0) rotate(-180deg); }
+    header.logo .row .info {
+      margin-top: 0.825rem;
+      font-weight: 700;
+      font-family: "Open Sans";
+      text-transform: uppercase; }
+      @media all and (max-width: 575.98px) {
+        header.logo .row .info {
+          display: none; } }
+      header.logo .row .info .name {
+        font-size: 1.35rem; }
+      header.logo .row .info .title {
+        font-size: 0.8rem; }
+
 header.menu {
   position: fixed;
   top: 0;
@@ -3900,8 +3945,6 @@ header.navigation .sections {
       background-color: #967463; }
     header.navigation .sections > a[href=\#connect] {
       background-color: #859663; }
-    header.navigation .sections > a[href=\#certificates] {
-      background-color: #537694; }
     header.navigation .sections > a > .slider {
       position: absolute;
       top: 0;
@@ -3954,51 +3997,6 @@ header.navigation div.header {
   background-color: rgba(0, 0, 15, 0.1);
   height: 3px; }
 
-
-header.logo {
-  width: 100%;
-  padding: 0.5rem 2rem;
-  background-color: white;
-  user-select: none;
-  -webkit-user-select: none; }
-  header.logo .row {
-    max-width: 75rem;
-    margin: 0 auto; }
-    header.logo .row .image {
-      width: 4.675rem;
-      height: 4.675rem;
-      margin-right: 0.25rem;
-      position: relative; }
-      header.logo .row .image img {
-        height: inherit;
-        width: inherit;
-        position: absolute;
-        -webkit-user-drag: none;
-        transform-origin: center center;
-        -webkit-transform-origin: center center; }
-        header.logo .row .image img:not(.preload) {
-          transition: transform 1.5s;
-          -webkit-transition: 1.5s;
-          transform: scale(1, 1) rotate(0deg);
-          -webkit-transform: scale(1, 1) rotate(0deg); }
-        header.logo .row .image img.preload.outer {
-          transform: scale(0, 0) rotate(360deg);
-          -webkit-transform: scale(0, 0) rotate(360deg); }
-        header.logo .row .image img.preload.inner {
-          transform: scale(0, 0) rotate(-180deg);
-          -webkit-transform: scale(0, 0) rotate(-180deg); }
-    header.logo .row .info {
-      margin-top: 0.825rem;
-      font-weight: 700;
-      font-family: "Open Sans";
-      text-transform: uppercase; }
-      @media all and (max-width: 575.98px) {
-        header.logo .row .info {
-          display: none; } }
-      header.logo .row .info .name {
-        font-size: 1.35rem; }
-      header.logo .row .info .title {
-        font-size: 0.8rem; }
 
 section#about {
   box-shadow: 0 -40px 30px 0px rgba(0, 0, 15, 0.5); }
@@ -4187,6 +4185,48 @@ section#connect .footer {
   to {
     transform: rotate(1turn); } }
 
+section#education {
+  margin-top: -12rem; }
+  section#education .card.education {
+    animation: fade-in 1s;
+    animation-play-state: running; }
+    section#education .card.education.preload {
+      animation-play-state: paused; }
+    @media all and (max-width: 767.98px) {
+      section#education .card.education .content .header > :not(:last-child), section#education .card.education .content .header .about > :not(:last-child) {
+        margin-bottom: 1rem; } }
+    section#education .card.education .content .header .icon {
+      height: auto;
+      margin-right: 1rem;
+      width: 3rem; }
+      @media all and (max-width: 767.98px) {
+        section#education .card.education .content .header .icon {
+          margin-right: 0; } }
+      @media all and (min-width: 576px) {
+        section#education .card.education .content .header .icon {
+          width: 3.75rem; } }
+      @media all and (min-width: 768px) {
+        section#education .card.education .content .header .icon {
+          width: 3rem; } }
+      section#education .card.education .content .header .icon > img {
+        width: 100%;
+        height: 100%;
+        user-select: none;
+        -webkit-user-drag: none; }
+    section#education .card.education .content .progress {
+      padding-top: 2.5rem; }
+      section#education .card.education .content .progress .progress-bar {
+        margin-top: 0;
+        margin-bottom: 0; }
+        @media all and (max-width: 767.98px) {
+          section#education .card.education .content .progress .progress-bar .marker.completed {
+            display: none; } }
+    section#education .card.education .content .info .courses ul {
+      padding-left: 0;
+      list-style-position: inside; }
+      section#education .card.education .content .info .courses ul > li {
+        padding: 0 1rem; }
+
 section#experience .card.experience {
   animation: fade-in 1s;
   animation-play-state: running; }
@@ -4352,48 +4392,6 @@ section#projects .project {
             height: 100%; } }
     section#projects .project .content .slider .body .details {
       padding-left: 1rem; }
-
-section#education {
-  margin-top: -12rem; }
-  section#education .card.education {
-    animation: fade-in 1s;
-    animation-play-state: running; }
-    section#education .card.education.preload {
-      animation-play-state: paused; }
-    @media all and (max-width: 767.98px) {
-      section#education .card.education .content .header > :not(:last-child), section#education .card.education .content .header .about > :not(:last-child) {
-        margin-bottom: 1rem; } }
-    section#education .card.education .content .header .icon {
-      height: auto;
-      margin-right: 1rem;
-      width: 3rem; }
-      @media all and (max-width: 767.98px) {
-        section#education .card.education .content .header .icon {
-          margin-right: 0; } }
-      @media all and (min-width: 576px) {
-        section#education .card.education .content .header .icon {
-          width: 3.75rem; } }
-      @media all and (min-width: 768px) {
-        section#education .card.education .content .header .icon {
-          width: 3rem; } }
-      section#education .card.education .content .header .icon > img {
-        width: 100%;
-        height: 100%;
-        user-select: none;
-        -webkit-user-drag: none; }
-    section#education .card.education .content .progress {
-      padding-top: 2.5rem; }
-      section#education .card.education .content .progress .progress-bar {
-        margin-top: 0;
-        margin-bottom: 0; }
-        @media all and (max-width: 767.98px) {
-          section#education .card.education .content .progress .progress-bar .marker.completed {
-            display: none; } }
-    section#education .card.education .content .info .courses ul {
-      padding-left: 0;
-      list-style-position: inside; }
-      section#education .card.education .content .info .courses ul > li {
-        padding: 0 1rem; }
 
 section#skills ul.hex-grid {
   list-style: none;
