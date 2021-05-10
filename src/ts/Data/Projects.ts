@@ -19,7 +19,6 @@ export const Projects: ProjectData[] = [
             'Implementing background removal feature using U^2 algorithm.',
         ],
     },
-
     {
         name: 'Ubo',
         color: '#3f6bff',
