@@ -1,0 +1,415 @@
+// Variables for the page's overall theme
+
+$root-font-size: 16px;
+
+$theme-colors: (
+    base: #F4F4F9,
+    primary: #297eab,
+    secondary: white,
+    dark: #2D323F,
+    darker: #222636
+);
+
+$font-colors: (
+    dark: #3C3C60,
+    light: #6A6A87,
+    white: white,
+    faded-white: rgba(white, 0.75),
+    very-faded-white: rgba(white, 0.35),
+    black: #161616,
+    link: #654AA5
+);
+
+$font-weights: (
+    light: 200,
+    normal: 400,
+    semi-bold: 600,
+    bold: 700,
+);
+
+$font-families: (
+    default: "Nunito Sans",
+    logo: "Open Sans",
+    handwriting: "Kalam"
+);
+
+$font-sizes: (
+    1: (6rem, 5rem),
+    2: (3.5rem, 2.8125rem),
+    3: (2.8125rem, 2.125rem),
+    4: (2.125rem, 1.5rem),
+    5: (1.5rem, 1.25rem),
+    6: (1.25rem, 1rem),
+    7: (1rem, 0.875rem),
+    8: (0.875rem, 0.75rem),
+    9: (0.75rem, 0.625rem)
+);
+
+@function font-color($color: dark) {
+    @return map-get($font-colors, $color);
+}
+
+@function font-weight($weight: normal) {
+    @return map-get($font-weights, $weight);
+}
+
+@function font-family($family: default) {
+    @return map-get($font-families, $family);
+}
+
+@function get-font-size($i) {
+    @return map-get($font-sizes, $i);
+}
+
+@mixin font-size($i) {
+    $sizes: map-get($font-sizes, $i);
+
+    $size: nth($sizes, 1);
+    $mobile: nth($sizes, 2);
+
+    font-size: $size;
+    @include for-mobile {
+        font-size: $mobile;
+    }
+}
+
+@function theme-color($color) {
+    @return map-get($theme-colors, $color);
+}
+
+$themes: (
+    base: (
+        background-color: theme-color(base),
+        color: font-color(dark),
+        selection: (
+            background-color: theme-color(primary),
+            color: font-color(white)
+        )
+    ),
+    primary: (
+        background-color: theme-color(primary),
+        color: font-color(white),
+        selection: (
+            background-color: theme-color(base),
+            color: font-color(dark)
+        ),
+        colors: (
+            light: font-color(faded-white)
+        )
+    ),
+    secondary: (
+        background-color: theme-color(secondary),
+        color: font-color(dark),
+        selection: (
+            background-color: theme-color(primary),
+            color: font-color(white)
+        ),
+        colors: (
+            light: font-color(light)
+        )
+    ),
+    dark: (
+        background-color: theme-color(dark),
+        color: font-color(white),
+        selection: (
+            background-color: theme-color(base),
+            color: font-color(dark)
+        ),
+        colors: (
+            light: font-color(faded-white),
+            lighter: font-color(very-faded-white),
+            action: theme-color(primary)
+        )
+    ),
+    darker: (
+        background-color: theme-color(darker),
+        color: font-color(white),
+        selection: (
+            background-color: theme-color(base),
+            color: theme-color(dark)
+        ),
+        colors: (
+            light: font-color(faded-white),
+            action: theme-color(primary),
+            typescript: #1B93E2,
+            react: #00D8FF
+        )
+    )
+);
+
+@function theme-background-color($theme) {
+    @return map-get(map-get($themes, $theme), background-color);
+}
+
+@function theme-font-color($theme, $color: null) {
+    @if($color == null) {
+        @return map-get(map-get($themes, $theme), color);
+    }
+    @return map-get(map-get(map-get($themes, $theme), colors), $color);
+}
+
+$grid-columns: 12;
+
+$menu-speed: 0.5s;
+$menu-size: 13.4375rem;
+
+@mixin drawn-in {
+    animation: fade-in 1s;
+    animation-play-state: running;
+
+    &.preload {
+        animation-play-state: paused;
+    }
+}
+
+// $breakpoints: (
+//     xs: 0px,
+//     sm: 500px,
+//     md: 900px,
+//     lg: 1200px,
+//     xl: 1800px
+// );
+
+$breakpoints: (
+    xs: 0px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);
+
+$breakpoints-max: (
+    xs: 0px,
+    sm: 575.98px,
+    md: 767.98px,
+    lg: 991.98px,
+    xl: 1199.98px
+);
+
+@mixin for-viewport-up($size) {
+    // Small devices (landscape phones)
+    @if($size == sm) {
+        @media all and (min-width: map-get($breakpoints, sm)) {
+            @content;
+        }
+    }
+    // Medium devices (tablets)
+    @else if($size == md) {
+        @media all and (min-width: map-get($breakpoints, md)) {
+            @content;
+        }
+    }
+    // Large devices (desktops)
+    @else if($size == lg) {
+        @media all and (min-width: map-get($breakpoints, lg)) {
+            @content;
+        }
+    }
+    // Extra large devices (large desktops)
+    @else if($size == xl) {
+        @media all and (min-width: map-get($breakpoints, xl)) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin for-viewport-down($size) {
+
+    @if($size == xs) {
+        @media all and (max-width: map-get($breakpoints-max, sm)) {
+            @content;
+        }
+    }
+    // Small devices (landscape phones)
+    @else if($size == sm) {
+        @media all and (max-width: map-get($breakpoints-max, md)) {
+            @content;
+        }
+    }
+    // Medium devices (tablets)
+    @else if($size == md) {
+        @media all and (max-width: map-get($breakpoints-max, lg)) {
+            @content;
+        }
+    }
+    // Large devices (desktops)
+    @else if($size == lg) {
+        @media all and (max-width: map-get($breakpoints-max, xl)) {
+            @content;
+        }// Extra small devices (portrait phones)
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin for-viewport-only($size) {
+    // Extra small devices (portrait phones)
+    @if($size == xs) {
+        @media all and (min-width: map-get($breakpoints, xs)) and (max-width: map-get($breakpoints-max, sm)) {
+            @content;
+        }
+    }
+    // Small devices (landscape phones)
+    @if($size == sm) {
+        @media all and (min-width: map-get($breakpoints, sm)) and (max-width: map-get($breakpoints-max, md)) {
+            @content;
+        }
+    }
+    // Medium devices (tablets)
+    @else if($size == md) {
+        @media all and (min-width: map-get($breakpoints, md)) and (max-width: map-get($breakpoints-max, lg)) {
+            @content;
+        }
+    }
+    // Large devices (desktops)
+    @else if($size == lg) {
+        @media all and (min-width: map-get($breakpoints, lg)) and (max-width: map-get($breakpoints-max, xl)) {
+            @content;
+        }
+    }
+    // Extra large devices (large desktops)
+    @else if($size == xl) {
+        @media all and (min-width: map-get($breakpoints, xl)) {
+            @content;
+        }
+    }
+}
+
+@mixin for-mobile {
+    @include for-viewport-down(xs) {
+        @content;
+    }
+}
+
+@mixin for-not-mobile {
+    @include for-viewport-up(sm) {
+        @content;
+    }
+}
+
+@mixin for-ie {
+    @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content;
+    }
+}
+
+@mixin for-not-ie {
+    @supports not (-ms-high-contrast: none) {
+        @content;
+    }
+}
+
+@function shadow($opacity) {
+    @return rgba(0,0,15,$opacity);
+}
+
+@function highlight($opacity) {
+    @return rgba(255,255,255,$opacity);
+}
+
+$elevation-umbra-color: shadow(0.2);
+$elevation-penumbra-color: shadow(0.14);
+$elevation-ambient-color: shadow(0.12);
+
+$elevation-umbra: (
+  0: "0 0 0 0",
+  1: "0 2px 1px -1px",
+  2: "0 3px 1px -2px",
+  3: "0 3px 3px -2px",
+  4: "0 2px 4px -1px",
+  5: "0 3px 5px -1px",
+  6: "0 3px 5px -1px",
+  7: "0 4px 5px -2px",
+  8: "0 5px 5px -3px",
+  9: "0 5px 6px -3px",
+  10: "0 6px 6px -3px",
+  11: "0 6px 7px -4px",
+  12: "0 7px 8px -4px",
+  13: "0 7px 8px -4px",
+  14: "0 7px 9px -4px",
+  15: "0 8px 9px -5px",
+  16: "0 8px 10px -5px",
+  17: "0 8px 11px -5px",
+  18: "0 9px 11px -5px",
+  19: "0 9px 12px -6px",
+  20: "0 10px 13px -6px",
+  21: "0 10px 13px -6px",
+  22: "0 10px 14px -6px",
+  23: "0 11px 14px -7px",
+  24: "0 11px 15px -7px"
+);
+
+$elevation-penumbra: (
+  0: "0 0 0 0",
+  1: "0 1px 1px 0",
+  2: "0 2px 2px 0",
+  3: "0 3px 4px 0",
+  4: "0 4px 5px 0",
+  5: "0 5px 8px 0",
+  6: "0 6px 10px 0",
+  7: "0 7px 10px 1px",
+  8: "0 8px 10px 1px",
+  9: "0 9px 12px 1px",
+  10: "0 10px 14px 1px",
+  11: "0 11px 15px 1px",
+  12: "0 12px 17px 2px",
+  13: "0 13px 19px 2px",
+  14: "0 14px 21px 2px",
+  15: "0 15px 22px 2px",
+  16: "0 16px 24px 2px",
+  17: "0 17px 26px 2px",
+  18: "0 18px 28px 2px",
+  19: "0 19px 29px 2px",
+  20: "0 20px 31px 3px",
+  21: "0 21px 33px 3px",
+  22: "0 22px 35px 3px",
+  23: "0 23px 36px 3px",
+  24: "0 24px 38px 3px"
+);
+
+$elevation-ambient: (
+  0: "0 0 0 0",
+  1: "0 1px 3px 0",
+  2: "0 1px 5px 0",
+  3: "0 1px 8px 0",
+  4: "0 1px 10px 0",
+  5: "0 1px 14px 0",
+  6: "0 1px 18px 0",
+  7: "0 2px 16px 1px",
+  8: "0 3px 14px 2px",
+  9: "0 3px 16px 2px",
+  10: "0 4px 18px 3px",
+  11: "0 4px 20px 3px",
+  12: "0 5px 22px 4px",
+  13: "0 5px 24px 4px",
+  14: "0 5px 26px 4px",
+  15: "0 6px 28px 5px",
+  16: "0 6px 30px 5px",
+  17: "0 6px 32px 5px",
+  18: "0 7px 34px 6px",
+  19: "0 7px 36px 6px",
+  20: "0 8px 38px 7px",
+  21: "0 8px 40px 7px",
+  22: "0 8px 42px 7px",
+  23: "0 9px 44px 8px",
+  24: "0 9px 46px 8px"
+);
+
+@mixin elevation($z-index: 1) {
+    @if type-of($z-index) != number or not unitless($z-index) {
+        @error "$z-index must be a unitless number.";
+    }
+
+    @if $z-index < 0 or $z-index > 24 {
+        @error "$z-index must be between 0 and 24.";
+    }
+
+    box-shadow:
+        #{map-get($elevation-umbra, $z-index)} $elevation-umbra-color,
+        #{map-get($elevation-penumbra, $z-index)} $elevation-penumbra-color,
+        #{map-get($elevation-ambient, $z-index)} $elevation-ambient-color;
+}

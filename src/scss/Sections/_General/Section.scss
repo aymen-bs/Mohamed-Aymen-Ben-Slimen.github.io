@@ -1,0 +1,160 @@
+// Styling for the <section> tag and content
+
+@import "../../Theme.scss";
+
+@mixin custom-visual-tag($tag, $content: "") {
+    section##{to-lower-case($tag)} {
+        &.has-visual-tags {
+            &::before {
+                z-index: 1;
+                @if($content != "") {
+                    content: "<#{$tag} #{$content}>";
+
+                    @include for-mobile {
+                        content: "<#{$tag}>";
+                    }
+                }
+                @else {
+                    content: "<#{$tag}>";
+                }
+            }
+            &::after {
+                z-index: 1;
+                content: "</#{$tag}>";
+            }
+        }
+    }
+}
+
+@include custom-visual-tag(Skills);
+@include custom-visual-tag(Experience);
+@include custom-visual-tag(Projects, "class=\"recent\"");
+@include custom-visual-tag(Education);
+@include custom-visual-tag(Certificates);
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+@mixin has-divider($image, $place: bottom) {
+    $pseudo-element: after;
+    @if($place == top) {
+        $pseudo-element: before;
+    }
+
+    &::#{$pseudo-element} {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-size: 100% 100%;
+        background-image: url('../images/Dividers/#{$image}.svg');
+        background-position: center center;
+
+        @if($place == top) {
+            bottom: calc(100% - 10px);
+            transform: rotate(180deg);
+        }
+        @else {
+            top: calc(100% - 10px);
+        }
+    }
+}
+
+.section {
+    $padding: 5rem 1.5rem;
+    padding: $padding;
+
+    position: relative;
+
+    &.is-theme-primary {
+        &.is-wavy-top {
+            @include has-divider(Wavy, top);
+        }
+
+        &.is-wavy-bottom {
+            @include has-divider(Wavy, bottom);
+        }
+    }
+
+    &.is-theme-dark {
+        &.is-round-top {
+            @include has-divider(Round, top);
+        }
+    }
+
+    &.has-subsections {
+        padding: 0;
+
+        .section {
+            padding: 2rem nth($padding, 2);
+        }
+    }
+
+    &.is-long {
+        padding-bottom: 12rem !important;
+    }
+
+    &.has-no-top-padding {
+        padding-top: 0 !important;
+    }
+
+    &.has-no-bottom-padding {
+        padding-bottom: 0 !important;
+    }
+
+    &.has-visual-tags {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        >* {
+            width: 100%;
+        }
+
+        &::before, &::after {
+            position: relative;
+            font-family: font-family(handwriting);
+            font-weight: 700;
+            margin: 0 auto;
+            opacity: 0.5;
+            width: 100%;
+            max-width: 1000px;
+            user-select: none;
+
+            font-size: 1.25rem;
+            @include for-mobile {
+                font-size: 1rem;
+            }
+
+        }
+
+        &::before {
+            content: "<Section>";
+            top: -1rem;
+            text-align: left;
+        }
+
+        &::after {
+            content: "</Section>";
+            top: 1rem;
+            text-align: right;
+        }
+    }
+
+    .extra-bottom {
+        margin-bottom: 2.5rem !important;
+    }
+}
+
+// Fade-in animation
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

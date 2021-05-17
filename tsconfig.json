@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "isolatedModules": false,
+        "jsx": "react",
+        "jsxFactory": "ElementFactory.createElement",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext",
+            "ES5",
+            "ScriptHost",
+            "ES2015"
+        ],
+        "types": []
+    },
+    "compileOnSave": false,
+    "include": [
+        "./src/ts/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

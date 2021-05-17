@@ -1,0 +1,162 @@
+// Styling for canvas at top of page
+
+@import "../Theme";
+
+.canvas {
+    position: relative;
+
+    canvas#particles {
+        width: 100%;
+        height: 95vh;
+        background: radial-gradient(ellipse at bottom, #26394D 0%, #090A0F 100%);
+        display: block;
+    }
+
+    .canvas-text-container {
+        position: absolute;
+        top: 7vh;
+        left: 0;
+        height: 75%;
+        width: 100%;
+        pointer-events: none;
+
+        .canvas-text {
+            font-family: "Nunito Sans";
+            font-weight: font-weight(light);
+            color: white;
+            word-wrap: break-word;
+            user-select: none;
+            -webkit-user-select: none;
+            transform: translateZ(0) scale(1.0, 1.0);
+
+            @keyframes canvas-text-fade-in {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            opacity: 0;
+            animation: canvas-text-fade-in 1s;
+            animation-fill-mode: forwards;
+
+            $delay: 1000ms;
+
+            @for $n from 1 through 4 {
+                &:nth-child(#{$n}) {
+                    animation-delay: calc(#{$delay} * #{$n});
+                }
+            }
+
+            .gradient {
+                $gradient: #052342;
+                background: linear-gradient(white, $gradient);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                @include for-ie {
+                    background: none;
+                    opacity: 0.5 !important;
+                }
+            }
+
+            .bold {
+                opacity: 1;
+            }
+
+            .light {
+                opacity: 0.5;
+            }
+
+            .lg {
+                @include for-viewport-down(xs) {
+                    font-size: 2.5rem;
+                }
+                @include for-viewport-up(sm) {
+                    font-size: 4rem;
+                }
+                @include for-viewport-up(md) {
+                    font-size: 6rem;
+                }
+                @include for-viewport-up(lg) {
+                    font-size: 8.5rem;
+                }
+            }
+
+            .sm {
+                @include for-viewport-down(xs) {
+                    font-size: 0.75rem;
+                }
+                @include for-viewport-up(sm) {
+                    font-size: 1rem;
+                }
+                @include for-viewport-up(md) {
+                    font-size: 1.5rem;
+                }
+                @include for-viewport-up(lg) {
+                    font-size: 2rem;
+                }
+            }
+
+            @mixin position-canvas-text($left, $vertical) {
+                left: $left;
+                transform: translate(-$left, -$vertical) translateZ(0) scale(1.0, 1.0);
+            }
+
+            &.design {
+                position: absolute;
+                $vertical: 0%;
+                top: $vertical;
+
+                @include for-mobile {
+                    @include position-canvas-text(50%, $vertical);
+                }
+                @include for-not-mobile {
+                    @include position-canvas-text(10%, $vertical);
+                }
+            }
+
+            &.develop {
+                position: absolute;
+                $vertical: 33%;
+                top: $vertical;
+
+                @include for-mobile {
+                    @include position-canvas-text(50%, $vertical);
+                }
+                @include for-not-mobile  {
+                    @include position-canvas-text(36%, $vertical);
+                }
+            }
+
+            &.deploy {
+                position: absolute;
+                $vertical: 66%;
+                top: $vertical;
+
+                @include for-mobile {
+                    @include position-canvas-text(50%, $vertical);
+                }
+                @include for-not-mobile  {
+                    @include position-canvas-text(56%, $vertical);
+                }
+            }
+
+            &.discover {
+                position: absolute;
+                $vertical: 100%;
+                top: $vertical;
+
+                @include for-mobile {
+                    @include position-canvas-text(50%, $vertical);
+                }
+                @include for-not-mobile  {
+                    @include position-canvas-text(90%, $vertical);
+                }
+            }
+        }
+    }
+}

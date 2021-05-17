@@ -1,0 +1,71 @@
+// Styling for fixed menu
+
+@import "../Theme";
+
+header.menu {
+    position: fixed;
+    top: 0;
+    right: 2rem;
+    height: 6.125rem;
+    width: 1.5625rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hamburger {
+        width: 100%;
+        cursor: pointer;
+
+        &.light {
+            .line {
+                background: font-color(white);
+            }
+        }
+
+        .line {
+            height: 2px;
+            width: 100%;
+            margin: 4px auto;
+            background: font-color(dark);
+            transition: 0.25s ease-in-out;
+        }
+    }
+
+    &:not([open]) {
+        .hamburger {
+            &:hover {
+                .line {
+                    margin: 6px auto;
+                }
+            }
+        }
+    }
+
+    &[open] {
+        .hamburger {
+            .line {
+                &:nth-child(1) {
+                    transform: translateY(6px) rotate(45deg);
+                    -webkit-transform: translateY(6px) rotate(45deg);
+                }
+    
+                &:nth-child(2) {
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                }
+    
+                &:nth-child(3) {
+                    transform: translateY(-6px) rotate(-45deg);
+                    -webkit-transform: translateY(-6px) rotate(-45deg);
+                }
+            }
+
+            &:hover {
+                .line {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

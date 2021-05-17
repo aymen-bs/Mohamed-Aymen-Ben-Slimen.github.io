@@ -1,0 +1,22 @@
+// Styling for <bg> tag
+
+@import "../Theme";
+
+$line-width: 2px;
+$grid-size: 32px;
+
+bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    margin: 0;
+}
+
+#pattern-hex polygon {
+    fill: none;
+    stroke: #EBEBF4;
+    stroke-width: 5;
+}

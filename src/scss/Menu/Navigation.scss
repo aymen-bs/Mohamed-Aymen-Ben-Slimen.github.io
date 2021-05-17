@@ -1,0 +1,17 @@
+// Styling the sections in the menu
+
+@import "../Theme";
+
+header.navigation {
+    position: fixed;
+    height: 100%;
+    width: $menu-size;
+    margin-left: 100%;
+    background: theme-background-color(secondary);
+    transition: box-shadow $menu-speed;
+    z-index: 1;
+}
+
+main[shifted] header.navigation {
+    box-shadow: -15px 0px 25px shadow(0.3);
+}

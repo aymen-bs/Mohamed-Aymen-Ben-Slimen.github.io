@@ -1,0 +1,16 @@
+// Styling for links
+
+@import "../Theme.scss";
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &.is-colored-link {
+        &:hover {
+            color: font-color(link);
+        }
+    }
+}
