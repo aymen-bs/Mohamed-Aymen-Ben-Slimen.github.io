@@ -10,9 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c728682-f249-455c-8820-98fc3c48eb17" name="Default Changelist" comment="First commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7c728682-f249-455c-8820-98fc3c48eb17" name="Default Changelist" comment="First commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +30,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1n82KIOm34akx5Gcs7OcqJUq7MU" />
   <component name="ProjectViewState">
@@ -100,7 +99,7 @@
       <workItem from="1620623854613" duration="2204000" />
       <workItem from="1620716863732" duration="2543000" />
       <workItem from="1620750636905" duration="359000" />
-      <workItem from="1621246859603" duration="1563000" />
+      <workItem from="1621246859603" duration="1914000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1617645096126</created>
@@ -270,7 +269,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621247754396</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="First commit">
+      <created>1621248499218</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1621248499218</updated>
+    </task>
+    <task id="LOCAL-00026" summary="First commit">
+      <created>1621248632723</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1621248632723</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,18 +334,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="407" y="174" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1617654374583" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1621247758026">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1621248719504">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1621247758026" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1621248719504" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621248652026">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1621248652026" />
     <state x="478" y="11" width="579" height="801" key="find.popup" timestamp="1619650830681">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="478" y="11" width="579" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1619650830681" />
-    <state x="523" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1621248435811">
+    <state x="523" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1621248716019">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="523" y="314" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1621248435811" />
+    <state x="523" y="314" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1621248716019" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1617638002402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
