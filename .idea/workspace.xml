@@ -10,11 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c728682-f249-455c-8820-98fc3c48eb17" name="Default Changelist" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/out/images/Experience/expensya.svg" afterDir="false" />
+    <list default="true" id="7c728682-f249-455c-8820-98fc3c48eb17" name="Default Changelist" comment="expensya update">
+      <change afterPath="$PROJECT_DIR$/out/images/Experience/tplus.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ts/Data/Experience.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/Data/Experience.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +104,7 @@
       <workItem from="1620716863732" duration="2543000" />
       <workItem from="1620750636905" duration="359000" />
       <workItem from="1621246859603" duration="2107000" />
-      <workItem from="1631381539215" duration="3001000" />
+      <workItem from="1631381539215" duration="5704000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1617645096126</created>
@@ -297,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621248889696</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="expensya update">
+      <created>1631389941085</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1631389941085</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,56 +322,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="expensya update" />
+    <option name="LAST_COMMIT_MESSAGE" value="expensya update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1619486948498">
+    <state x="722" y="145" key="Vcs.Push.Dialog.v2" timestamp="1631390528286">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1619486948498" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1617631204222">
+    <state x="722" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1631390528286" />
+    <state x="970" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1631390436121">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617631204222" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1617631204222">
+    <state x="970" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1631390436121" />
+    <state x="812" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1631390493148">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617631204222" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1617631204222">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617631204222" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1617631204222">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617631204222" />
-    <state x="147" y="65" key="MergeDialog" timestamp="1617654374575">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="147" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1617654374575" />
-    <state x="407" y="174" key="MultipleFileMergeDialog" timestamp="1617654374583">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="407" y="174" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1617654374583" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1621248719504">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1621248719504" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621248652026">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1621248652026" />
-    <state x="478" y="11" width="579" height="801" key="find.popup" timestamp="1619650830681">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="478" y="11" width="579" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1619650830681" />
-    <state x="523" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1621248716019">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="523" y="314" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1621248716019" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1617638002402">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1617638002402" />
+    <state x="812" y="314" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1631390493148" />
   </component>
 </project>

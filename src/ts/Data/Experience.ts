@@ -33,6 +33,20 @@ export const Experience: ExperienceData[] = [
         ]
     },
     {
+        svg: 'tplus.svg',
+        link: 'https://www.apps4you.org',
+        company: 'T+',
+        location: 'Freelance - France - Remote',
+        position: 'Software Engineer',
+        begin: 'Mai 2021',
+        end: 'Present',
+        flavor: 'I am working with T+ company on a white board web application.',
+        roles: [
+            'Backend development with Express.js framework, Web Sockets and MongoDB.',
+            'Frontend development with Angular.',
+        ]
+    },
+    {
         svg: 'apps4you.svg',
         link: 'https://www.apps4you.org',
         company: 'Apps4You ',
