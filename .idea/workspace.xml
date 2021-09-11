@@ -10,7 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c728682-f249-455c-8820-98fc3c48eb17" name="Default Changelist" comment="First commit" />
+    <list default="true" id="7c728682-f249-455c-8820-98fc3c48eb17" name="Default Changelist" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/out/images/Experience/expensya.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/Data/Experience.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/Data/Experience.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,21 +46,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/images/Certificates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/images/Experience" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="E:\Programming\templates\portfolio2\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Programming\templates\portfolio2\src\scss\Sections\Cerificates" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programming\templates\portfolio2\out\images\Experience" />
       <recent name="E:\Programming\templates\portfolio2\out\images\Certificates" />
       <recent name="E:\Programming\templates\portfolio2\out\images\Projects" />
       <recent name="E:\Development\templates\portfolio2\out\images\Education" />
       <recent name="E:\Development\templates\portfolio2\out\images\Experience" />
-      <recent name="E:\Development\templates\portfolio2\out\images\Content" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Programming\templates\portfolio2\src\scss\Sections\Cerificates" />
     </key>
   </component>
   <component name="RunManager">
@@ -99,7 +105,8 @@
       <workItem from="1620623854613" duration="2204000" />
       <workItem from="1620716863732" duration="2543000" />
       <workItem from="1620750636905" duration="359000" />
-      <workItem from="1621246859603" duration="1914000" />
+      <workItem from="1621246859603" duration="2107000" />
+      <workItem from="1631381539215" duration="3001000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1617645096126</created>
@@ -283,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621248632723</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="First commit">
+      <created>1621248889696</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1621248889696</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
