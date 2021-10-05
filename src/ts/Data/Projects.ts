@@ -4,6 +4,21 @@ import { ProjectData } from '../Classes/Elements/Project'
 
 export const Projects: ProjectData[] = [
     {
+        name: 'Andromeda',
+        color: '#020202',
+        image: 'andromeda.png',
+        type: 'Hackathon Project',
+        date: 'October 2021',
+        award: null,
+        flavor: 'Web application to track and map space debris and satellites in real time and predict their locations in the future.',
+        repo: null,
+        external: 'http://mohamed-aymen-ben-slimen.me/Andromeda/',
+        details: [
+            '3D globe and animation with Secium.js.',
+            'Predict space debris ans satellites locations with Satellite.js.',
+        ],
+    },
+    {
         name: 'AR Copy Paste',
         color: '#1b9b00',
         image: 'ar.png',
@@ -15,7 +30,7 @@ export const Projects: ProjectData[] = [
         external: 'https://www.linkedin.com/feed/update/urn:li:activity:6793486112175243264/',
         details: [
             'Developing the mobile application using React Native.',
-            'Developing the desktop application using Python and Tkinter',
+            'Developing the desktop application using Python and Tkinter.',
             'Implementing background removal feature using U^2 algorithm.',
         ],
     },
