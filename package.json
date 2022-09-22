@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d docs",
+    "build": "babel src -d out",
     "start": "node index.js",
     "gulp": "gulp"
   },
