@@ -4,13 +4,29 @@ import { ExperienceData } from '../Classes/Elements/Experience'
 
 export const Experience: ExperienceData[] = [
     {
+        svg: 'tucan.svg',
+        link: 'https://www.tucan.ai',
+        company: 'Tucan.ai',
+        location: 'Internship - Berlin, Germany',
+        position: 'Software Engineer',
+        begin: 'February 2022',
+        end: 'Present',
+        flavor: `Tucan.ai is a Berlin-based tech startup developing AI software aimed at improving our professional communication.
+         Tucan offers productivity tools based on automatic speech recognition, transcription and summarisation to help B2B customers organise,
+          carry out and post-process meetings and other structured communication more efficiently. `,
+        roles: [
+            'Build machine learning models.',
+            'MLOps.',
+        ]
+    },
+    {
         svg: 'expensya.svg',
         link: 'https://www.expensya.com',
         company: 'Expensya ',
         location: 'Part-time job - Tunisia',
         position: 'Software Engineer',
         begin: 'August 2021',
-        end: 'Present',
+        end: 'February 2022',
         flavor: 'Expensya is a Web and Mobile solution that automates expense reports management for professionals.',
         roles: [
             'Frontend development with Angular.',

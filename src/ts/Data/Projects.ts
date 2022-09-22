@@ -9,7 +9,7 @@ export const Projects: ProjectData[] = [
         image: 'andromeda.png',
         type: 'Hackathon Project',
         date: 'October 2021',
-        award: null,
+        award: "NASA Space Apps Challenge World Finalist.",
         flavor: 'Web application to track and map space debris and satellites in real time and predict their locations in the future.',
         repo: null,
         external: 'http://mohamed-aymen-ben-slimen.me/Andromeda/',

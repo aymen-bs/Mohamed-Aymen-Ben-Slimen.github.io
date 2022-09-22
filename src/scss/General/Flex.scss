@@ -100,8 +100,8 @@
                     // Width sizes in a row
                     @for $i from 1 through $grid-columns {
                         &.#{$name}-#{$i} {
-                            flex-basis: 100% / $grid-columns * $i;
-                            max-width: 100% / $grid-columns * $i;
+                            flex-basis: calc(100% / $grid-columns) * $i;
+                            max-width: calc(100% / $grid-columns) * $i;
                         }
                     }
                 }

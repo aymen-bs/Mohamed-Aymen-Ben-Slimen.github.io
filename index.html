@@ -37,6 +37,95 @@
             // IE <9 Support
             document.createElement("bg");
         </script>
+
+        <style>
+                .speech-bubble {
+  position: relative;
+  margin: .5em auto;
+  padding: 1em;
+  width: 200px; height: 60px;
+  border-radius: .25em;
+  transform: rotate(-4deg) rotateY(15deg);
+  background: #629bdd;
+  font: 16px Century Gothic, Verdana, sans-serif;
+  text-align: center;
+}
+.speech-bubble:before, .speech-bubble:after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+}
+.speech-bubble:after {
+  top: 0; right: 0; bottom: 0; left: 0;
+  border-radius: inherit;
+  transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+  background: #f4fbfe;
+}
+.speech-bubble:before {
+  border: solid 0 transparent;
+  border-right: solid 3.5em #f4fbfe;
+  border-bottom: solid .25em #629bdd;
+  bottom: .25em; left: 1.25em;
+  width: 0; height: 1em;
+  transform: rotate(45deg) skewX(75deg);
+}
+
+#ubo {
+    position: fixed;
+    bottom: -10px;
+    left: 0;
+    display: none;
+}
+
+.ubo-img {
+    width: 260px;
+    position: relative;
+    right: -60px
+}
+
+#ubo.show {
+    display: block;
+}
+
+#ubo.show .ubo-img {
+    animation: tada 2s ease;
+}
+
+#ubo.show .speech-bubble {
+    animation: appear 3s ease;
+}
+
+@keyframes tada {
+    from {
+        translate: 0 260px; 
+    }
+    to {
+        translate: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        scale: 0.5;
+        opacity: 0; 
+    }
+
+    60% {
+        scale: 0.5;
+        opacity: 0; 
+    }
+
+    95% {
+        scale: 1.1;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+        </style>
     </head>
     <body>
         <bg>
@@ -228,6 +317,31 @@
                 </section>
             </div>
         </main>
+        <div class="ubo" id="ubo">
+            <div class='speech-bubble'>You should hire him!</div>
+            <img class="ubo-img" src="./out/images/ubo.png" alt="img"/>
+        </div>
+
     </body>
+    
+    <script>
+
+        ubo = document.getElementById("ubo");
+
+        setTimeout(() => {
+            ubo.classList.add('show');
+        }, 6 * 1000);
+
+        /*
+        document.addEventListener("scroll", () => {
+            var y = window.scrollY;
+            console.log(y);
+            if (y >= 200) {
+                console.log('aaaa');
+          //      ubo.classList.add('show');
+            }
+        });
+        */
+    </script>
     <script type="text/javascript" src="./out/js/scripts.js"></script>
 </html>

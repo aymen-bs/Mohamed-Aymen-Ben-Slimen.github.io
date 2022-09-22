@@ -42,5 +42,18 @@ export const Certificates: ProjectData[] = [
         details: [
         ]
     },
+    {
+        name: 'Galactic problem solver by NASA',
+        color: '#2448b8',
+        image: 'nasa.png',
+        type: '',
+        date: 'October 2021',
+        award: null,
+        flavor: 'My team Andromeda is qualified to World Finals in the NASA Space Apps Challenge.',
+        repo: null,
+        external: null,
+        details: [
+        ]
+    },
 
 ]

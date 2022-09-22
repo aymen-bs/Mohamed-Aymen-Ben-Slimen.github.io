@@ -8,7 +8,7 @@ DOM.load().then(document => {
         // DOM.getFirstElement('.menu .hamburger .line').className = '';
         Logo.Outer.classList.remove('preload');
         setTimeout(() => {
-            Logo.Inner.classList.remove('preload');
+           // Logo.Inner.classList.remove('preload');
         }, 400);
     }
     else {

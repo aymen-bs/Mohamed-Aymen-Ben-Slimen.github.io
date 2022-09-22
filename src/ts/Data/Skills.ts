@@ -88,6 +88,12 @@ export const Skills: SkillData[] = [
         category: SkillCategory.DataScience,
     },
     {
+        name: 'PyTorch',
+        svg: 'pytorch',
+        color: '#2B3539',
+        category: SkillCategory.DataScience,
+    },
+    {
         name: 'Git',
         svg: 'git',
         color: '#F05032',
@@ -124,4 +130,3 @@ export const Skills: SkillData[] = [
         category: SkillCategory.Database,
     },
 ];
-console.log("helooooooooooooo");

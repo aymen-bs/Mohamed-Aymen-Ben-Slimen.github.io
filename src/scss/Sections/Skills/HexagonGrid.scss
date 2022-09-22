@@ -23,7 +23,7 @@
 
 // Create offset for each row of hexagons
 @mixin create-offset($hex-per-row) {
-    $offset: percentage(1 / $hex-per-row / 4);
+    $offset: percentage(calc(1 / $hex-per-row / 4));
     @for $i from 1 through $hex-per-row {
         &:nth-child(#{$hex-per-row * 2}n + #{$i}) {
             left: -$offset;
@@ -39,13 +39,13 @@
 // Create sizings for hexagon container
 @mixin skill-container-size($size) {
     $hex: hex-per-row($size);
-    min-width: percentage(1 / $hex);
-    padding-top: percentage(1 / $hex * 0.866025404);
+    min-width: percentage(calc(1 / $hex));
+    padding-top: percentage(calc(1 / $hex) * 0.866025404);
     @include create-offset($hex);
 }
 
 // @function calc-padding-hack($hex-per-row) {
-//     @return percentage(100 / 86.6025403784 * (1 / $hex-per-row) - 0.01);
+//     @return percentage(100 / 86.6025403784 * (calc(1 / $hex)-per-row) - 0.01);
 // }
 
 section#skills {
