@@ -1,5 +1,3 @@
-// Manage preprocessors and transpilers
-
 const gulp = require('gulp');
 const ts = require('gulp-typescript');
 const tsProject = ts.createProject('./tsconfig.json');
@@ -28,7 +26,7 @@ gulp.task('sass', () => {
 	return gulp.src('src/scss/**/*.+(scss|sass)')
 		.pipe(sass())
 		.pipe(concat('main.css'))
-		.pipe(gulp.dest('docs/css'))
+		.pipe(gulp.dest('out/css'))
 		.pipe(connect.reload())
 });
 
@@ -40,7 +38,7 @@ gulp.task('html', () => {
 
 // Clean up the transpiled TypeScript files
 gulp.task('clean', () => {
-	return gulp.src('docs/ts', { read: false }).pipe(clean());
+	return gulp.src('out/ts', { read: false }).pipe(clean());
 });
 
 // Transpile all TypeScript files into JavaScript
@@ -48,13 +46,13 @@ gulp.task('typescript', () => {
 	return tsProject.src()
 		.pipe(tsProject())
 		.js
-		.pipe(gulp.dest('docs/ts'))
+		.pipe(gulp.dest('out/ts'))
 });
 
 // Browserify and merge all JavaScript files together
 gulp.task('browserify', () => {
 	return browserify({
-        entries: glob.sync('docs/ts/**/*.js'),
+        entries: glob.sync('out/ts/**/*.js'),
         debug: true
 	})
 		.transform('babelify', {
@@ -72,7 +70,7 @@ gulp.task('browserify', () => {
 		.pipe(source('scripts.js'))
 		.pipe(buffer())
         // .pipe(sourcemaps.init())
-		.pipe(gulp.dest('docs/js'))
+		.pipe(gulp.dest('out/js'))
 		.pipe(connect.reload());
 });
 

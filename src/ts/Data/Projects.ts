@@ -4,6 +4,21 @@ import { ProjectData } from '../Classes/Elements/Project'
 
 export const Projects: ProjectData[] = [
     {
+        name: 'Facebook sentiment analysis',
+        color: 'blue',
+        image: 'fb.png',
+        type: 'Personal Project',
+        date: 'February 2022',
+        award: null,
+        flavor: 'A chrome extension that apply sentiment analysis on Facebook comments.',
+        repo: null,
+        external: 'https://www.linkedin.com/posts/mohamed-aymen-ben-slimen_a-chrome-extension-that-analyzes-the-comments-activity-6867008834750218241-MUVw?utm_source=share&utm_medium=member_desktop',
+        details: [
+            'Develop a Chrome extension with JavaScript.',
+            'Build a sentiment analysis model with Python and PyTorch.',
+        ],
+    },
+    {
         name: 'Andromeda',
         color: '#020202',
         image: 'andromeda.png',
@@ -12,7 +27,7 @@ export const Projects: ProjectData[] = [
         award: "NASA Space Apps Challenge World Finalist.",
         flavor: 'Web application to track and map space debris and satellites in real time and predict their locations in the future.',
         repo: null,
-        external: 'http://mohamed-aymen-ben-slimen.me/Andromeda/',
+        external: 'https://mohamed-aymen-ben-slimen.github.io/Andromeda/',
         details: [
             '3D globe and animation with Secium.js.',
             'Predict space debris ans satellites locations with Satellite.js.',
@@ -43,7 +58,7 @@ export const Projects: ProjectData[] = [
         award: 'Imagine Cup 2021 world finals and 9th prize of EU: Africa post crisis journey hackathon',
         flavor: 'A smart console with educational games to help children with autism maintain their treatements at home.',
         repo: null,
-        external: 'http://mohamed-aymen-ben-slimen.me/UBO-Site-Vitrine/',
+        external: 'https://mohamed-aymen-ben-slimen.github.io/UBO-Site-Vitrine/',
         details: [
             'Developing a dashboard with React.',
             'Developing an API using Express.js and MongoDB.',
