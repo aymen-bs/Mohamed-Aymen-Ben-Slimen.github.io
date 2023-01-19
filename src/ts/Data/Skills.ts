@@ -129,4 +129,10 @@ export const Skills: SkillData[] = [
         color: '#F89700',
         category: SkillCategory.Database,
     },
+    {
+        name: 'AWS',
+        svg: 'aws',
+        color: '#3D3D3D',
+        category: SkillCategory.DevOps | SkillCategory.Programming,
+    },
 ];

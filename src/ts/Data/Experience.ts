@@ -4,19 +4,36 @@ import { ExperienceData } from '../Classes/Elements/Experience'
 
 export const Experience: ExperienceData[] = [
     {
+        svg: 'aws.svg',
+        link: 'https://aws.amazon.com',
+        company: 'Amazon AWS',
+        location: 'Internship - Berlin, Germany',
+        position: 'Software Engineer',
+        begin: 'November 2022',
+        end: 'Present',
+        flavor: `Worked on AWS DevOps Guru which a fully managed operations service that makes it easy for
+         developers and operators to improve the performance and availability of their applications. `,
+        roles: [
+            'Build a system to improve DevOps Guru\'s availability with DevOps Guru service.',
+            'Build a system to generate tickets for on-call engineers when a problem is detected in production.',
+        ]
+    },
+    {
         svg: 'tucan.svg',
         link: 'https://www.tucan.ai',
         company: 'Tucan.ai',
         location: 'Internship - Berlin, Germany',
         position: 'Software Engineer',
         begin: 'February 2022',
-        end: 'Present',
+        end: 'September 2022',
         flavor: `Tucan.ai is a Berlin-based tech startup developing AI software aimed at improving our professional communication.
-         Tucan offers productivity tools based on automatic speech recognition, transcription and summarisation to help B2B customers organise,
-          carry out and post-process meetings and other structured communication more efficiently. `,
+         Tucan offers productivity tools based on automatic speech recognition,
+          transcription and summarisation to help B2B customers organise, carry out and post-process meetings 
+          and other structured communication more efficiently. `,
         roles: [
             'Build machine learning models.',
-            'MLOps.',
+            'Models deployment.',
+            'Fix bugs in production',
         ]
     },
     {
