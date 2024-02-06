@@ -5528,115 +5528,6 @@ section#about .qualities .icon, section#about .qualities .quality {
 section#about .qualities .desc {
   padding: 0.25rem;
 }
-section#certificates .projects-container > * {
-  animation: fade-in 1s;
-  animation-play-state: running;
-  position: relative;
-}
-section#certificates .projects-container > *.preload {
-  animation-play-state: paused;
-}
-section#certificates .award {
-  position: absolute;
-  top: -1rem;
-  right: -1rem;
-  z-index: 1;
-}
-section#certificates .award:hover img {
-  transform: translateY(-2px) scale(1.05, 1.05);
-}
-section#certificates .award img {
-  height: 6rem;
-  width: auto;
-  user-select: none;
-  -webkit-user-drag: none;
-  transition: transform 0.2s ease-in-out;
-}
-section#certificates .project {
-  width: 100%;
-  height: 100%;
-}
-section#certificates .project .content .options {
-  transform: translateZ(1px);
-}
-section#certificates .project .content .options .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section#certificates .project .content .options .btn svg {
-  height: 1.1rem;
-  width: auto;
-  transition: 0.5s ease-in-out;
-  transition-property: opacity, transform, height, width;
-}
-@media all and (max-width: 575.98px) {
-  section#certificates .project .content .options .btn svg {
-    height: 0.85rem;
-  }
-}
-@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  section#certificates .project .content .options .btn svg {
-    width: 1.5rem;
-  }
-}
-section#certificates .project .content .options .btn span {
-  display: inline-flex;
-  max-width: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  transition: 0.5s ease-in-out;
-  transition-property: max-width;
-}
-section#certificates .project .content .options .btn:hover svg {
-  opacity: 0;
-  transform: scale(0, 0);
-  height: 0;
-}
-@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  section#certificates .project .content .options .btn:hover svg {
-    width: 0;
-  }
-}
-section#certificates .project .content .options .btn:hover span {
-  max-width: 10rem;
-}
-section#certificates .project .content .slider {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateY(100%);
-  transition: transform 0.5s ease-in-out;
-}
-section#certificates .project .content .slider[opened] {
-  transform: translateY(0);
-}
-section#certificates .project .content .slider .title .close-btn-wrapper {
-  padding-right: 1rem;
-}
-section#certificates .project .content .slider .title .close-btn-wrapper .close > svg {
-  width: 0.75rem;
-  height: auto;
-}
-@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  section#certificates .project .content .slider .title .close-btn-wrapper .close {
-    height: 0;
-    width: 1.1rem;
-    padding-top: 1.1rem;
-  }
-  section#certificates .project .content .slider .title .close-btn-wrapper .close > svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-section#certificates .project .content .slider .body .details {
-  padding-left: 1rem;
-}
 section#connect .direct-connect .form-container {
   max-width: 600px;
   margin-left: auto;
@@ -5781,111 +5672,113 @@ section#education .card.education .content .info .courses ul {
 section#education .card.education .content .info .courses ul > li {
   padding: 0 1rem;
 }
-section#experience .card.experience {
+section#certificates .projects-container > * {
   animation: fade-in 1s;
   animation-play-state: running;
+  position: relative;
 }
-section#experience .card.experience.preload {
+section#certificates .projects-container > *.preload {
   animation-play-state: paused;
 }
-section#experience .card.experience .content .header {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+section#certificates .award {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  z-index: 1;
 }
-@media all and (max-width: 767.98px) {
-  section#experience .card.experience .content .header {
-    flex-wrap: wrap;
-  }
-  section#experience .card.experience .content .header > :not(:last-child) {
-    margin-bottom: 1rem;
-  }
+section#certificates .award:hover img {
+  transform: translateY(-2px) scale(1.05, 1.05);
 }
-section#experience .card.experience .content .header .icon {
-  flex: 0 0 auto;
-  height: auto;
-  margin-right: 1rem;
-  min-width: 3rem;
-  width: 3rem;
+section#certificates .award img {
+  height: 6rem;
+  width: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+  transition: transform 0.2s ease-in-out;
 }
-@media all and (max-width: 767.98px) {
-  section#experience .card.experience .content .header .icon {
-    margin-right: 0;
-  }
-}
-@media all and (min-width: 576px) {
-  section#experience .card.experience .content .header .icon {
-    width: 3.75rem;
-  }
-}
-@media all and (min-width: 768px) {
-  section#experience .card.experience .content .header .icon {
-    width: 3rem;
-  }
-}
-section#experience .card.experience .content .header .icon img {
+section#certificates .project {
   width: 100%;
   height: 100%;
-  -webkit-user-drag: none;
-  user-select: none;
 }
-section#experience .card.experience .content .header .small {
-  color: #6A6A87;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 0.75rem;
+section#certificates .project .content .options {
+  transform: translateZ(1px);
+}
+section#certificates .project .content .options .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#certificates .project .content .options .btn svg {
+  height: 1.1rem;
+  width: auto;
+  transition: 0.5s ease-in-out;
+  transition-property: opacity, transform, height, width;
 }
 @media all and (max-width: 575.98px) {
-  section#experience .card.experience .content .header .small {
-    font-size: 0.5rem;
+  section#certificates .project .content .options .btn svg {
+    height: 0.85rem;
   }
 }
-section#experience .card.experience .content .header .company {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: left;
-  width: 100%;
-}
-@media all and (max-width: 767.98px) {
-  section#experience .card.experience .content .header .company {
-    align-items: center;
-    text-align: center;
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  section#certificates .project .content .options .btn svg {
+    width: 1.5rem;
   }
 }
-section#experience .card.experience .content .header .company .name {
-  color: #3C3C60;
-  transition: color 0.2s;
+section#certificates .project .content .options .btn span {
+  display: inline-flex;
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 0.5s ease-in-out;
+  transition-property: max-width;
 }
-section#experience .card.experience .content .header .company .name:hover {
-  color: #654AA5;
+section#certificates .project .content .options .btn:hover svg {
+  opacity: 0;
+  transform: scale(0, 0);
+  height: 0;
 }
-section#experience .card.experience .content .header .role {
-  justify-self: flex-end;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-}
-@media all and (max-width: 767.98px) {
-  section#experience .card.experience .content .header .role {
-    align-items: center;
-    text-align: center;
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  section#certificates .project .content .options .btn:hover svg {
+    width: 0;
   }
 }
-section#experience .card.experience .content .info {
-  padding: 1rem 2rem;
+section#certificates .project .content .options .btn:hover span {
+  max-width: 10rem;
 }
-section#experience .card.experience .content .info .description {
-  padding-left: 1rem;
-  border-left: 0.25rem solid #297eab;
+section#certificates .project .content .slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
 }
-section#experience .card.experience .content .info .job {
+section#certificates .project .content .slider[opened] {
+  transform: translateY(0);
+}
+section#certificates .project .content .slider .title .close-btn-wrapper {
+  padding-right: 1rem;
+}
+section#certificates .project .content .slider .title .close-btn-wrapper .close > svg {
+  width: 0.75rem;
+  height: auto;
+}
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  section#certificates .project .content .slider .title .close-btn-wrapper .close {
+    height: 0;
+    width: 1.1rem;
+    padding-top: 1.1rem;
+  }
+  section#certificates .project .content .slider .title .close-btn-wrapper .close > svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+section#certificates .project .content .slider .body .details {
   padding-left: 1rem;
 }
 section#projects .projects-container > * {
@@ -5995,6 +5888,113 @@ section#projects .project .content .slider .title .close-btn-wrapper .close > sv
   }
 }
 section#projects .project .content .slider .body .details {
+  padding-left: 1rem;
+}
+section#experience .card.experience {
+  animation: fade-in 1s;
+  animation-play-state: running;
+}
+section#experience .card.experience.preload {
+  animation-play-state: paused;
+}
+section#experience .card.experience .content .header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+@media all and (max-width: 767.98px) {
+  section#experience .card.experience .content .header {
+    flex-wrap: wrap;
+  }
+  section#experience .card.experience .content .header > :not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+section#experience .card.experience .content .header .icon {
+  flex: 0 0 auto;
+  height: auto;
+  margin-right: 1rem;
+  min-width: 3rem;
+  width: 3rem;
+}
+@media all and (max-width: 767.98px) {
+  section#experience .card.experience .content .header .icon {
+    margin-right: 0;
+  }
+}
+@media all and (min-width: 576px) {
+  section#experience .card.experience .content .header .icon {
+    width: 3.75rem;
+  }
+}
+@media all and (min-width: 768px) {
+  section#experience .card.experience .content .header .icon {
+    width: 3rem;
+  }
+}
+section#experience .card.experience .content .header .icon img {
+  width: 100%;
+  height: 100%;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+section#experience .card.experience .content .header .small {
+  color: #6A6A87;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.75rem;
+}
+@media all and (max-width: 575.98px) {
+  section#experience .card.experience .content .header .small {
+    font-size: 0.5rem;
+  }
+}
+section#experience .card.experience .content .header .company {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+}
+@media all and (max-width: 767.98px) {
+  section#experience .card.experience .content .header .company {
+    align-items: center;
+    text-align: center;
+  }
+}
+section#experience .card.experience .content .header .company .name {
+  color: #3C3C60;
+  transition: color 0.2s;
+}
+section#experience .card.experience .content .header .company .name:hover {
+  color: #654AA5;
+}
+section#experience .card.experience .content .header .role {
+  justify-self: flex-end;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+@media all and (max-width: 767.98px) {
+  section#experience .card.experience .content .header .role {
+    align-items: center;
+    text-align: center;
+  }
+}
+section#experience .card.experience .content .info {
+  padding: 1rem 2rem;
+}
+section#experience .card.experience .content .info .description {
+  padding-left: 1rem;
+  border-left: 0.25rem solid #297eab;
+}
+section#experience .card.experience .content .info .job {
   padding-left: 1rem;
 }
 section#skills ul.hex-grid {
