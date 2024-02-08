@@ -1,4 +1,175 @@
 
+.canvas {
+  position: relative;
+}
+.canvas canvas#particles {
+  width: 100%;
+  height: 95vh;
+  background: radial-gradient(ellipse at bottom, #26394D 0%, #090A0F 100%);
+  display: block;
+}
+.canvas .canvas-text-container {
+  position: absolute;
+  top: 7vh;
+  left: 0;
+  height: 75%;
+  width: 100%;
+  pointer-events: none;
+}
+.canvas .canvas-text-container .canvas-text {
+  font-family: "Nunito Sans";
+  font-weight: 200;
+  color: white;
+  word-wrap: break-word;
+  user-select: none;
+  -webkit-user-select: none;
+  transform: translateZ(0) scale(1, 1);
+  opacity: 0;
+  animation: canvas-text-fade-in 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes canvas-text-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.canvas .canvas-text-container .canvas-text:nth-child(1) {
+  animation-delay: calc(1000ms * 1);
+}
+.canvas .canvas-text-container .canvas-text:nth-child(2) {
+  animation-delay: calc(1000ms * 2);
+}
+.canvas .canvas-text-container .canvas-text:nth-child(3) {
+  animation-delay: calc(1000ms * 3);
+}
+.canvas .canvas-text-container .canvas-text:nth-child(4) {
+  animation-delay: calc(1000ms * 4);
+}
+.canvas .canvas-text-container .canvas-text .gradient {
+  background: linear-gradient(white, #052342);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .canvas .canvas-text-container .canvas-text .gradient {
+    background: none;
+    opacity: 0.5 !important;
+  }
+}
+.canvas .canvas-text-container .canvas-text .bold {
+  opacity: 1;
+}
+.canvas .canvas-text-container .canvas-text .light {
+  opacity: 0.5;
+}
+@media all and (max-width: 575.98px) {
+  .canvas .canvas-text-container .canvas-text .lg {
+    font-size: 2.5rem;
+  }
+}
+@media all and (min-width: 576px) {
+  .canvas .canvas-text-container .canvas-text .lg {
+    font-size: 4rem;
+  }
+}
+@media all and (min-width: 768px) {
+  .canvas .canvas-text-container .canvas-text .lg {
+    font-size: 6rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .canvas .canvas-text-container .canvas-text .lg {
+    font-size: 8.5rem;
+  }
+}
+@media all and (max-width: 575.98px) {
+  .canvas .canvas-text-container .canvas-text .sm {
+    font-size: 0.75rem;
+  }
+}
+@media all and (min-width: 576px) {
+  .canvas .canvas-text-container .canvas-text .sm {
+    font-size: 1rem;
+  }
+}
+@media all and (min-width: 768px) {
+  .canvas .canvas-text-container .canvas-text .sm {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .canvas .canvas-text-container .canvas-text .sm {
+    font-size: 2rem;
+  }
+}
+.canvas .canvas-text-container .canvas-text.design {
+  position: absolute;
+  top: 0%;
+}
+@media all and (max-width: 575.98px) {
+  .canvas .canvas-text-container .canvas-text.design {
+    left: 50%;
+    transform: translate(-50%, 0%) translateZ(0) scale(1, 1);
+  }
+}
+@media all and (min-width: 576px) {
+  .canvas .canvas-text-container .canvas-text.design {
+    left: 10%;
+    transform: translate(-10%, 0%) translateZ(0) scale(1, 1);
+  }
+}
+.canvas .canvas-text-container .canvas-text.develop {
+  position: absolute;
+  top: 33%;
+}
+@media all and (max-width: 575.98px) {
+  .canvas .canvas-text-container .canvas-text.develop {
+    left: 50%;
+    transform: translate(-50%, -33%) translateZ(0) scale(1, 1);
+  }
+}
+@media all and (min-width: 576px) {
+  .canvas .canvas-text-container .canvas-text.develop {
+    left: 36%;
+    transform: translate(-36%, -33%) translateZ(0) scale(1, 1);
+  }
+}
+.canvas .canvas-text-container .canvas-text.deploy {
+  position: absolute;
+  top: 66%;
+}
+@media all and (max-width: 575.98px) {
+  .canvas .canvas-text-container .canvas-text.deploy {
+    left: 50%;
+    transform: translate(-50%, -66%) translateZ(0) scale(1, 1);
+  }
+}
+@media all and (min-width: 576px) {
+  .canvas .canvas-text-container .canvas-text.deploy {
+    left: 56%;
+    transform: translate(-56%, -66%) translateZ(0) scale(1, 1);
+  }
+}
+.canvas .canvas-text-container .canvas-text.discover {
+  position: absolute;
+  top: 100%;
+}
+@media all and (max-width: 575.98px) {
+  .canvas .canvas-text-container .canvas-text.discover {
+    left: 50%;
+    transform: translate(-50%, -100%) translateZ(0) scale(1, 1);
+  }
+}
+@media all and (min-width: 576px) {
+  .canvas .canvas-text-container .canvas-text.discover {
+    left: 90%;
+    transform: translate(-90%, -100%) translateZ(0) scale(1, 1);
+  }
+}
 bg {
   position: fixed;
   top: 0;
@@ -5146,177 +5317,6 @@ header.logo .row .info .name {
 header.logo .row .info .title {
   font-size: 0.8rem;
 }
-.canvas {
-  position: relative;
-}
-.canvas canvas#particles {
-  width: 100%;
-  height: 95vh;
-  background: radial-gradient(ellipse at bottom, #26394D 0%, #090A0F 100%);
-  display: block;
-}
-.canvas .canvas-text-container {
-  position: absolute;
-  top: 7vh;
-  left: 0;
-  height: 75%;
-  width: 100%;
-  pointer-events: none;
-}
-.canvas .canvas-text-container .canvas-text {
-  font-family: "Nunito Sans";
-  font-weight: 200;
-  color: white;
-  word-wrap: break-word;
-  user-select: none;
-  -webkit-user-select: none;
-  transform: translateZ(0) scale(1, 1);
-  opacity: 0;
-  animation: canvas-text-fade-in 1s;
-  animation-fill-mode: forwards;
-}
-@keyframes canvas-text-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.canvas .canvas-text-container .canvas-text:nth-child(1) {
-  animation-delay: calc(1000ms * 1);
-}
-.canvas .canvas-text-container .canvas-text:nth-child(2) {
-  animation-delay: calc(1000ms * 2);
-}
-.canvas .canvas-text-container .canvas-text:nth-child(3) {
-  animation-delay: calc(1000ms * 3);
-}
-.canvas .canvas-text-container .canvas-text:nth-child(4) {
-  animation-delay: calc(1000ms * 4);
-}
-.canvas .canvas-text-container .canvas-text .gradient {
-  background: linear-gradient(white, #052342);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .canvas .canvas-text-container .canvas-text .gradient {
-    background: none;
-    opacity: 0.5 !important;
-  }
-}
-.canvas .canvas-text-container .canvas-text .bold {
-  opacity: 1;
-}
-.canvas .canvas-text-container .canvas-text .light {
-  opacity: 0.5;
-}
-@media all and (max-width: 575.98px) {
-  .canvas .canvas-text-container .canvas-text .lg {
-    font-size: 2.5rem;
-  }
-}
-@media all and (min-width: 576px) {
-  .canvas .canvas-text-container .canvas-text .lg {
-    font-size: 4rem;
-  }
-}
-@media all and (min-width: 768px) {
-  .canvas .canvas-text-container .canvas-text .lg {
-    font-size: 6rem;
-  }
-}
-@media all and (min-width: 992px) {
-  .canvas .canvas-text-container .canvas-text .lg {
-    font-size: 8.5rem;
-  }
-}
-@media all and (max-width: 575.98px) {
-  .canvas .canvas-text-container .canvas-text .sm {
-    font-size: 0.75rem;
-  }
-}
-@media all and (min-width: 576px) {
-  .canvas .canvas-text-container .canvas-text .sm {
-    font-size: 1rem;
-  }
-}
-@media all and (min-width: 768px) {
-  .canvas .canvas-text-container .canvas-text .sm {
-    font-size: 1.5rem;
-  }
-}
-@media all and (min-width: 992px) {
-  .canvas .canvas-text-container .canvas-text .sm {
-    font-size: 2rem;
-  }
-}
-.canvas .canvas-text-container .canvas-text.design {
-  position: absolute;
-  top: 0%;
-}
-@media all and (max-width: 575.98px) {
-  .canvas .canvas-text-container .canvas-text.design {
-    left: 50%;
-    transform: translate(-50%, 0%) translateZ(0) scale(1, 1);
-  }
-}
-@media all and (min-width: 576px) {
-  .canvas .canvas-text-container .canvas-text.design {
-    left: 10%;
-    transform: translate(-10%, 0%) translateZ(0) scale(1, 1);
-  }
-}
-.canvas .canvas-text-container .canvas-text.develop {
-  position: absolute;
-  top: 33%;
-}
-@media all and (max-width: 575.98px) {
-  .canvas .canvas-text-container .canvas-text.develop {
-    left: 50%;
-    transform: translate(-50%, -33%) translateZ(0) scale(1, 1);
-  }
-}
-@media all and (min-width: 576px) {
-  .canvas .canvas-text-container .canvas-text.develop {
-    left: 36%;
-    transform: translate(-36%, -33%) translateZ(0) scale(1, 1);
-  }
-}
-.canvas .canvas-text-container .canvas-text.deploy {
-  position: absolute;
-  top: 66%;
-}
-@media all and (max-width: 575.98px) {
-  .canvas .canvas-text-container .canvas-text.deploy {
-    left: 50%;
-    transform: translate(-50%, -66%) translateZ(0) scale(1, 1);
-  }
-}
-@media all and (min-width: 576px) {
-  .canvas .canvas-text-container .canvas-text.deploy {
-    left: 56%;
-    transform: translate(-56%, -66%) translateZ(0) scale(1, 1);
-  }
-}
-.canvas .canvas-text-container .canvas-text.discover {
-  position: absolute;
-  top: 100%;
-}
-@media all and (max-width: 575.98px) {
-  .canvas .canvas-text-container .canvas-text.discover {
-    left: 50%;
-    transform: translate(-50%, -100%) translateZ(0) scale(1, 1);
-  }
-}
-@media all and (min-width: 576px) {
-  .canvas .canvas-text-container .canvas-text.discover {
-    left: 90%;
-    transform: translate(-90%, -100%) translateZ(0) scale(1, 1);
-  }
-}
 header.menu {
   position: fixed;
   top: 0;
@@ -5828,66 +5828,6 @@ section#experience .card.experience .content .info .description {
 section#experience .card.experience .content .info .job {
   padding-left: 1rem;
 }
-section#education {
-  margin-top: -12rem;
-}
-section#education .card.education {
-  animation: fade-in 1s;
-  animation-play-state: running;
-}
-section#education .card.education.preload {
-  animation-play-state: paused;
-}
-@media all and (max-width: 767.98px) {
-  section#education .card.education .content .header > :not(:last-child), section#education .card.education .content .header .about > :not(:last-child) {
-    margin-bottom: 1rem;
-  }
-}
-section#education .card.education .content .header .icon {
-  height: auto;
-  margin-right: 1rem;
-  width: 3rem;
-}
-@media all and (max-width: 767.98px) {
-  section#education .card.education .content .header .icon {
-    margin-right: 0;
-  }
-}
-@media all and (min-width: 576px) {
-  section#education .card.education .content .header .icon {
-    width: 3.75rem;
-  }
-}
-@media all and (min-width: 768px) {
-  section#education .card.education .content .header .icon {
-    width: 3rem;
-  }
-}
-section#education .card.education .content .header .icon > img {
-  width: 100%;
-  height: 100%;
-  user-select: none;
-  -webkit-user-drag: none;
-}
-section#education .card.education .content .progress {
-  padding-top: 2.5rem;
-}
-section#education .card.education .content .progress .progress-bar {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-@media all and (max-width: 767.98px) {
-  section#education .card.education .content .progress .progress-bar .marker.completed {
-    display: none;
-  }
-}
-section#education .card.education .content .info .courses ul {
-  padding-left: 0;
-  list-style-position: inside;
-}
-section#education .card.education .content .info .courses ul > li {
-  padding: 0 1rem;
-}
 section#projects .projects-container > * {
   animation: fade-in 1s;
   animation-play-state: running;
@@ -5996,6 +5936,66 @@ section#projects .project .content .slider .title .close-btn-wrapper .close > sv
 }
 section#projects .project .content .slider .body .details {
   padding-left: 1rem;
+}
+section#education {
+  margin-top: -12rem;
+}
+section#education .card.education {
+  animation: fade-in 1s;
+  animation-play-state: running;
+}
+section#education .card.education.preload {
+  animation-play-state: paused;
+}
+@media all and (max-width: 767.98px) {
+  section#education .card.education .content .header > :not(:last-child), section#education .card.education .content .header .about > :not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+section#education .card.education .content .header .icon {
+  height: auto;
+  margin-right: 1rem;
+  width: 3rem;
+}
+@media all and (max-width: 767.98px) {
+  section#education .card.education .content .header .icon {
+    margin-right: 0;
+  }
+}
+@media all and (min-width: 576px) {
+  section#education .card.education .content .header .icon {
+    width: 3.75rem;
+  }
+}
+@media all and (min-width: 768px) {
+  section#education .card.education .content .header .icon {
+    width: 3rem;
+  }
+}
+section#education .card.education .content .header .icon > img {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+section#education .card.education .content .progress {
+  padding-top: 2.5rem;
+}
+section#education .card.education .content .progress .progress-bar {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media all and (max-width: 767.98px) {
+  section#education .card.education .content .progress .progress-bar .marker.completed {
+    display: none;
+  }
+}
+section#education .card.education .content .info .courses ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+section#education .card.education .content .info .courses ul > li {
+  padding: 0 1rem;
 }
 section#skills ul.hex-grid {
   list-style: none;
