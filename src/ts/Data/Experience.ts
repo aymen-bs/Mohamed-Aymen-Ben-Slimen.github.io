@@ -37,10 +37,10 @@ export const Experience: ExperienceData[] = [
     svg: "tucan.svg",
     link: "https://www.tucan.ai",
     company: "Tucan.ai",
-    location: "Internship - Berlin, Germany",
+    location: "Berlin, Germany",
     position: "Software Engineer",
     begin: "February 2022",
-    end: "September 2022",
+    end: "October 2022",
     flavor: `Tucan.ai is a Berlin-based tech startup developing AI software aimed at improving our professional communication.
          Tucan offers productivity tools based on automatic speech recognition,
           transcription and summarisation to help B2B customers organise, carry out and post-process meetings 
@@ -54,32 +54,16 @@ export const Experience: ExperienceData[] = [
   {
     svg: "expensya.svg",
     link: "https://www.expensya.com",
-    company: "Expensya ",
-    location: "Part-time job - Tunisia",
+    company: "Expensya",
+    location: "Tunis, Tunisia",
     position: "Software Engineer",
-    begin: "August 2021",
+    begin: "January 2021",
     end: "February 2022",
     flavor:
       "Expensya is a Web and Mobile solution that automates expense reports management for professionals.",
     roles: [
       "Frontend development with Angular.",
       "Backend development with .NET framework.",
-    ],
-  },
-  {
-    svg: "expensya.svg",
-    link: "https://www.expensya.com",
-    company: "Expensya ",
-    location: "Internship - Tunisia",
-    position: "Data Engineer",
-    begin: "June 2021",
-    end: "August 2021",
-    flavor:
-      "Expensya is a Web and Mobile solution that automates expense reports management for professionals.",
-    roles: [
-      "Data mining for OCR dataset.",
-      "Dashboard implementation for data visualization for OCR dataset.",
-      "Outliers detection.",
     ],
   },
   {
