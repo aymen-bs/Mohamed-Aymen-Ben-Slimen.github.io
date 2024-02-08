@@ -13,8 +13,9 @@ export const Experience: ExperienceData[] = [
     end: "Present",
     flavor: `I contributed to build an innovative platform that empowers users to unleash their creativity as movie directors with the assistance of AI technology.`,
     roles: [
-      "Collaborated closely with cross-functional teams to integrate cutting-edge AI technology into the platform.",
+      "Collaborated closely with cross-functional teams to integrate AI technology into the platform.",
       "Actively participated in code reviews, testing, and debugging processes to maintain high-quality standards and deliver a reliable product to users.",
+      "Build movie creation pipeline.",
     ],
   },
   {
