@@ -22,7 +22,7 @@ export const Experience: ExperienceData[] = [
     svg: "aws.svg",
     link: "https://aws.amazon.com",
     company: "Amazon AWS",
-    location: "Internship - Berlin, Germany",
+    location: "Berlin, Germany",
     position: "Software Engineer",
     begin: "November 2022",
     end: "March 2023",
