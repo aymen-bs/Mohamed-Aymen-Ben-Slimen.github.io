@@ -11,7 +11,7 @@ export const Education: EducationData[] = [
     location: "Tunis, Tunisia, TN",
     degree: "Software Engineering",
     start: "September 2019",
-    end: "June 2022",
+    end: "May 2022",
     credits: {
       total: 100,
       completed: 100,
