@@ -72,7 +72,7 @@ export const Experience: ExperienceData[] = [
     company: "T+",
     location: "Freelance - France - Remote",
     position: "Software Engineer",
-    begin: "Mai 2021",
+    begin: "May 2021",
     end: "September 2022",
     flavor: "I am working with T+ company on a white board web application.",
     roles: [
@@ -87,7 +87,7 @@ export const Experience: ExperienceData[] = [
     location: "Part-time job - Germany - Remote",
     position: "Software Engineer",
     begin: "October 2020",
-    end: "Mai 2021",
+    end: "May 2021",
     flavor:
       "I am working part-time with the startup Apps4You on cars rental project.",
     roles: [
