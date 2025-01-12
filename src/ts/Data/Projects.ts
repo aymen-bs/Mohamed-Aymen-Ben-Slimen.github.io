@@ -4,7 +4,23 @@ import { ProjectData } from "../Classes/Elements/Project";
 
 export const Projects: ProjectData[] = [
   {
-    name: "LeetCode Clone",
+    name: "StoryAI",
+    color: "#2f74fc",
+    image: "storyai.png",
+    type: "Personal Project",
+    date: "August 2024",
+    award: null,
+    flavor: "A text based game to build a story with AI.",
+    repo: null,
+    external: "https://story-ai.vercel.app",
+    details: [
+      "Build the game with NextJS.",
+      "Integrate LLM to generate parts of the story.",
+      "Deploy the project on Vercel.",
+    ],
+  },
+  {
+    name: "Ninja Coder",
     color: "#fa8211",
     image: "code-runner.png",
     type: "Personal Project",
