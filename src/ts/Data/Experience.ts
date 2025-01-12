@@ -4,7 +4,7 @@ import { ExperienceData } from "../Classes/Elements/Experience";
 
 export const Experience: ExperienceData[] = [
   {
-    svg: "Rpsenxt.svg",
+    svg: "rosenxt.svg",
     link: "https://www.rosen-nxt.com/en",
     company: "Rpsenxt Group",
     location: "Lingen, Germany",
