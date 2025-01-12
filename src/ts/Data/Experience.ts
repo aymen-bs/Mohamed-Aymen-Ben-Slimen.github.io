@@ -4,13 +4,28 @@ import { ExperienceData } from "../Classes/Elements/Experience";
 
 export const Experience: ExperienceData[] = [
   {
+    svg: "Rpsenxt.svg",
+    link: "https://www.rosen-nxt.com/en",
+    company: "Rpsenxt Group",
+    location: "Lingen, Germany",
+    position: "Software Engineer",
+    begin: "June 2024",
+    end: "Present",
+    flavor: `I am working on process inspection robot data to assess water pipeline conditions, supporting proactive maintenance and ensuring safe, reliable drinking water supply.`,
+    roles: [
+      "Developed a video processing pipeline for inspection robot footage to assess water pipeline conditions.",
+      "Implemented a solution to stream videos to the evaluation team, aiding in anomaly detection.",
+      "Enhanced and maintained evaluation software to support efficient condition analysis.",
+    ],
+  },
+  {
     svg: "pabolo.svg",
     link: "https://de.linkedin.com/company/pabolo",
     company: "Pabolo GmbH",
     location: "Karlsruhe, Germany",
     position: "Software Engineer",
     begin: "March 2023",
-    end: "Present",
+    end: "June 2024",
     flavor: `I contributed to build an innovative platform that empowers users to unleash their creativity as movie directors with the assistance of AI technology.`,
     roles: [
       "Collaborated closely with cross-functional teams to integrate AI technology into the platform.",
