@@ -63,7 +63,7 @@ export const Projects: ProjectData[] = [
     flavor:
       "Web application to track and map space debris and satellites in real time and predict their locations in the future.",
     repo: null,
-    external: "https://mohamed-aymen-ben-slimen.github.io/Andromeda/",
+    external: "https://aymen-bs.github.io/Andromeda/",
     details: [
       "3D globe and animation with Secium.js.",
       "Predict space debris ans satellites locations with Satellite.js.",
@@ -98,7 +98,7 @@ export const Projects: ProjectData[] = [
     flavor:
       "A smart console with educational games to help children with autism maintain their treatements at home.",
     repo: null,
-    external: "https://mohamed-aymen-ben-slimen.github.io/UBO-Site-Vitrine/",
+    external: "https://aymen-bs.github.io/UBO-Site-Vitrine/",
     details: [
       "Developing a dashboard with React.",
       "Developing an API using Express.js and MongoDB.",
@@ -149,7 +149,7 @@ export const Projects: ProjectData[] = [
     flavor:
       "Art Style Transfer is a solution for online fast neural style transfer to apply a style to an image.",
     repo: null,
-    external: "https://mohamed-aymen-ben-slimen.github.io/nst/build/",
+    external: "https://aymen-bs.github.io/nst/build/",
     details: [
       "Developing neural style transfer model using python.",
       "Developing front-end using React.",

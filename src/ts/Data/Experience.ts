@@ -6,7 +6,7 @@ export const Experience: ExperienceData[] = [
   {
     svg: "rosenxt.svg",
     link: "https://www.rosen-nxt.com/en",
-    company: "Rpsenxt Group",
+    company: "Rosenxt Group",
     location: "Lingen, Germany",
     position: "Software Engineer",
     begin: "June 2024",
