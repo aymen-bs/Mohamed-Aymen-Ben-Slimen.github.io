@@ -4,14 +4,29 @@ import { ExperienceData } from "../Classes/Elements/Experience";
 
 export const Experience: ExperienceData[] = [
   {
+    svg: "aws.svg",
+    link: "https://aws.amazon.com",
+    company: "Amazon AWS",
+    location: "Berlin, Germany",
+    position: "Systems Development Engineer",
+    begin: "July 2025",
+    end: "Present",
+    flavor: `Supporting and enabling AWS services within the European Sovereign Cloud (EUSC), ensuring reliability, compliance, and operational excellence.`,
+    roles: [
+      "Collaborate with AWS service teams to onboard, deploy, and operate services in the European Sovereign Cloud region.",
+      "Provide on-call operational support to maintain high availability and reliability of services in EUSC.",
+      "Investigate, debug, and resolve service issues, contributing to root cause analysis and long-term improvements.",
+    ],
+  },
+  {
     svg: "rosenxt.svg",
     link: "https://www.rosen-nxt.com/en",
     company: "Rosenxt Group",
     location: "Lingen, Germany",
     position: "Software Engineer",
     begin: "June 2024",
-    end: "Present",
-    flavor: `I am working on process inspection robot data to assess water pipeline conditions, supporting proactive maintenance and ensuring safe, reliable drinking water supply.`,
+    end: "June 2025",
+    flavor: `Worked on process inspection robot data to assess water pipeline conditions, supporting proactive maintenance and ensuring safe, reliable drinking water supply.`,
     roles: [
       "Developed a video processing pipeline for inspection robot footage to assess water pipeline conditions.",
       "Implemented a solution to stream videos to the evaluation team, aiding in anomaly detection.",
