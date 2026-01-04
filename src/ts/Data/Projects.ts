@@ -4,7 +4,7 @@ import { ProjectData } from "../Classes/Elements/Project";
 
 export const Projects: ProjectData[] = [
   {
-    name: "ShutterCount",
+    name: "ShutterStats",
     color: "#13DAEC",
     image: "ShutterStats.png",
     type: "Personal Project",
