@@ -4,6 +4,23 @@ import { ProjectData } from "../Classes/Elements/Project";
 
 export const Projects: ProjectData[] = [
   {
+    name: "ShutterCount",
+    color: "#13DAEC",
+    image: "ShutterStats.png",
+    type: "Personal Project",
+    date: "December 2025",
+    award: null,
+    flavor:
+      "Quickly analyze photos EXIF metadata and check camera shutter counts online.",
+    repo: null,
+    external: "https://shutter-count-project.vercel.app",
+    details: [
+      "Build the interface with NextJS.",
+      "Implement the API that extracts EXIF metadata.",
+      "Deploy the project on Vercel.",
+    ],
+  },
+  {
     name: "StoryAI",
     color: "#2f74fc",
     image: "storyai.png",
