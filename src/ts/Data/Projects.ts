@@ -4,7 +4,7 @@ import { ProjectData } from "../Classes/Elements/Project";
 
 export const Projects: ProjectData[] = [
   {
-    name: "ShutterStats",
+    name: "EXIF Eye",
     color: "#13DAEC",
     image: "ShutterStats.png",
     type: "Personal Project",
@@ -13,7 +13,7 @@ export const Projects: ProjectData[] = [
     flavor:
       "Quickly analyze photos EXIF metadata and check camera shutter counts online.",
     repo: null,
-    external: "https://shutter-count-project.vercel.app",
+    external: "https://www.exif-eye.com",
     details: [
       "Build the interface with NextJS.",
       "Implement the API that extracts EXIF metadata.",
