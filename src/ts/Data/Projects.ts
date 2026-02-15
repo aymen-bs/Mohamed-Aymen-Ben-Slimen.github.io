@@ -181,7 +181,7 @@ export const Projects: ProjectData[] = [
     award: null,
     flavor: "Restaurant website to make reservations.",
     repo: null,
-    external: "https://mohamed-aymen-ben-slimen.github.io/reastau/docs/",
+    external: "https://aymen-bs.github.io/reastau/docs/",
     details: [
       "Developing front-end using Angular.",
       "Developing API for reservations using Node.js and Express.js.",
